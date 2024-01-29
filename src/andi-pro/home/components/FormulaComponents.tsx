@@ -42,10 +42,10 @@ export const FormulaComponents = () => {
                     <CardActionArea sx={{height:'100%', borderRadius:10}}>
                         <Card sx={{textAlign:'center', width:'100%', height:'100%', background:'white', borderRadius:10, position: 'relative'}}>
                             <CardHeader sx={{background:'red', height:20}}></CardHeader>
-                            <CardContent sx={{pt:9, background:`white`, width:'100%', height:300}}>
+                            <CardContent sx={{pt:9, background:`white`, width:'100%', height:250}}>
                                 <img alt={user.nombre} 
                                     src={user.img} 
-                                    style={{width:'100%', height:'100%'}}
+                                    style={{width:'60%', height:'100%'}}
                                 />
                             </CardContent>
                             <CardContent sx={{ background:`white`, height:'100%'}}>
