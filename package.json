@@ -1,6 +1,7 @@
 {
   "name": "inicio-app",
   "private": true,
+  "homepage": "https://david-messi.github.io/AndiPro-FrontEnd-Actual/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
