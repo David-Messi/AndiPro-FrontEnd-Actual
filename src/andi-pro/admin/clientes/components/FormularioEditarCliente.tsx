@@ -1,5 +1,5 @@
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
 import { Form, Formik } from 'formik';
@@ -12,12 +12,8 @@ import { AutocompleteScreen, CargandoScreen, DateFormScreen, SelectNormal, TextF
 
 // import { useClienteStore } from '../../../../hooks';
 
-import moment from 'moment';
-import Swal from 'sweetalert2';
 
 
-
-  
 const top100Films = [
     { id: '1', nombre: 'The Shawshank Redemption', year: 1994 },
     { id: '3', nombre: 'The Godfather', year: 1972 },
@@ -39,7 +35,7 @@ export const FormularioEditarCliente = ({ bloqueo=true, guardar=false }: FormEdi
     // const { citys, startLoadingCitys } = useCityStore();
 
 
-    const [clienteData, setClienteData] = useState<Cliente | null>(null);
+    const [clienteData] = useState<Cliente | null>(null);
 
 
     // useEffect(() => {
@@ -111,7 +107,8 @@ export const FormularioEditarCliente = ({ bloqueo=true, guardar=false }: FormEdi
                         document: clienteData.document || '',
                         status: clienteData.status,
                     }}
-                    onSubmit={ ( values: Cliente) => {
+                    // values: Cliente
+                    onSubmit={ ( ) => {
                         // handleUpdateCliente(values);
                     }}
                     validationSchema={

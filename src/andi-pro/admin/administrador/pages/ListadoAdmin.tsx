@@ -31,12 +31,12 @@ export const ListadoAdmin = () => {
     const [rowsPerPage, setRowsPerPage] = useState(10);
 
 
-    const handleChangePage = (_event: unknown, newPage: number) => {
+    const handleChangePage = (_event: any, newPage: number) => {
         setPage(newPage);
     };
 
 
-    const handleChangeRowsPerPage = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const handleChangeRowsPerPage = (event: any) => {
         setRowsPerPage(+event.target.value);
         setPage(0);
     };

@@ -14,9 +14,9 @@ import { DisenioBasico } from "../../../layouts"
 export const PerfilScreen = () => {
 
 
-    const handleCrearInfo = (values: any, resetForm: any) => {
-        console.log('Holis Holis')
-    }
+    // const handleCrearInfo = (values: any, resetForm: any) => {
+    //     console.log('Holis Holis')
+    // }
 
 
     return (
@@ -32,8 +32,9 @@ export const PerfilScreen = () => {
                     confirmarPassword: '',
                     phone: '',
                 }}
-                onSubmit={ ( values: any, { resetForm } ) => {
-                    handleCrearInfo(values, resetForm);
+                // values: any, { resetForm } 
+                onSubmit={ ( ) => {
+                    // handleCrearInfo(values, resetForm);
                 }}
                 validationSchema={
                     Yup.object({

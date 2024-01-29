@@ -69,7 +69,8 @@ export const CrearCliente = () => {
                     birth_date: '',
                     document: '',
                 }}
-                onSubmit={ ( values: any, { resetForm } ) => {
+                // values: any, { resetForm } 
+                onSubmit={ ( ) => {
                     // handleCrearCliente(values, resetForm);
                 }}
                 validationSchema={

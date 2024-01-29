@@ -1,6 +1,4 @@
 
-import { useEffect } from 'react';
-
 import { Grid, InputAdornment, TextField } from '@mui/material';
 import { Search } from '@mui/icons-material/';
 import { useBusquedas, useUsuarioStore } from '../../../../hooks';
